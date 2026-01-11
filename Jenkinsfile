@@ -9,15 +9,6 @@ pipeline {
     }
 
     stages {
-
-        stage('Checkout') {
-            // This stage pulls source code from Git repository
-            steps {
-                git branch: 'main',
-                    url: 'https://github.com/your-username/your-repo.git'
-            }
-        }
-
         stage('Build') {
             // This stage compiles the Java source code
             steps {
